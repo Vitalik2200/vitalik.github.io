@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Название сайта</title>
+
+    <!-- Подключаем Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Подключаем свой CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Подключаем свои шрифты -->
+    <style>
+        @font-face {
+            font-family: 'MyWebFont1';
+            /*Даём название шрифту, чтобы присваивать его текстовым элементам на странице */
+            src: url('fonts/12236.ttf');
+            /*Указываем путь к файлу со шрифтом*/
+        }
+
+        @font-face {
+            font-family: 'MyWebFont2';
+            src: url('fonts/14027.otf');
+        }
+    </style>
+</head>
+
+<body>
+    <!-- задаём заголовку свой подключенный шрифт -->
+    <div class="brand" style="font-family: MyWebFont1; letter-spacing:10px"> 
+        Главный заголовок сайта
+    </div>
+    <div class="address-bar" style="font-family: MyWebFont2;">Подзаголовок сайта</div>
+
+    <!-- Меню по сайту -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Домашняя</a>
+                    </li>
+                    <li>
+                        <a href="#">Меню2</a>
+                    </li>
+                    <li>
+                        <a href="#">Меню3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- вкладываем весь основной контент сайта в контейнер. Начало контейнера: .container -->
+    <div class="container">
+    <!-- Начало раздела 1 ---------------------------------------------------------------------------------------------------->
+    <!-- Делаем вёрстку с применением колонок bootstrap -->
+        <div class="row">  <!-- Сначала создаём строку, в которой будут лежать колонки -->
+            <div class="box">
+                <div class="col-lg-12 text-center"> <!-- В строке создаём 1 колонку, занимающую все 12 условных разделов страницы-->
+                    <div id="carousel-example-generic" class="carousel slide">
+
+                        <!-- Галерея фотографий -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/1.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/1.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/1.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Переключатели вправо/влево в фотогалерее -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                    <h2 class="brand-before" style="font-family:MyWebFont2;">
+                        <small>Маленький заголовок раздела 1</small>
+                    </h2>
+                    <h1 class="brand-name" style="font-family:MyWebFont2;">Крупный заголовок раздела 1</h1>
+                    <hr class="tagline-divider">
+                    <h2 style="font-family:MyWebFont2;">
+                        <small>Подзаголовок
+                            <strong>раздела 1</strong>
+                        </small>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <!-- Конец раздела 1 ---------------------------------------------------------------------------------------------------->
+
+        <!-- Начало раздела 2 ---------------------------------------------------------------------------------------------------->        
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center" style="font-family:MyWebFont2;">Заголовок
+                        <strong>раздела 2</strong>
+                    </h2>
+                    <hr>
+                    <img class="img-responsive img-border img-left" src="img/2.png" alt="">
+                    <hr class="visible-xs">
+                    <p>Текст раздела 2</p>
+                    <p>Продолжение текста<a href="#"> ссылка в тексте</a>
+                        раздела 2</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- Конец раздела 2 ---------------------------------------------------------------------------------------------------->
+
+        <!-- Начало раздела 3 ---------------------------------------------------------------------------------------------------->
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center" style="font-family:MyWebFont2;">Заголовок
+                        <strong>раздела 3</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <img class="img-responsive img-border img-full" src="img/1.png" alt="">
+                    <h2>Название раздела 3
+                        <br>
+                        <small>подзаголовк раздела 3</small>
+                    </h2>
+                    <p>Текст раздела 3.</p>
+                    <a href="#" class="btn btn-default btn-lg">Читать больше</a>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="#">&larr; Назад</a>
+                        </li>
+                        <li class="next"><a href="#">Далее &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Конец раздела 3 ---------------------------------------------------------------------------------------------------->
+
+        <!-- Начало раздела 4 ---------------------------------------------------------------------------------------------------->
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center" style="font-family: MyWebFont1; letter-spacing:3px">Заголовок
+                        <strong>раздела 4</strong>
+                    </h2>
+                    <hr>
+                    <p>Текст раздела 4. </p>
+                </div>
+            </div>
+        </div>
+        <!-- Конец раздела 4 ---------------------------------------------------------------------------------------------------->
+
+    </div>
+    <!-- окончание контейнера: /.container -->
+
+    <!-- Нижний колонтитул -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Автор сайта 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключаем jQuery java script -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Подключаем Bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Скрипт для активации слайд-шоу в фотогалерее -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //Задайте скорость переключения фото
+        })
+    </script>
+
+</body>
+
+</html>
